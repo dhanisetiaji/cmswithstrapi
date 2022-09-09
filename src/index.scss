@@ -1,0 +1,104 @@
+:root{
+    --bg-color: #F7ECDE;
+    --bg-color-secondary:#E9DAC1;
+    --color-secondary: #9ED2C6;
+    --color-primary: #54BAB9;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+body{
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    // font-size: 1.2rem;
+    // color: var(--color-primary);
+}
+
+// Button
+.btn-primary{
+    background-color:var(--color-primary);
+    font-weight: 600;
+    padding: 9px 36px;
+    font-size: 0.8rem;
+    border:0;
+    color:#333;
+    box-shadow: 3px 2px 52px -15px rgba(255,186,51,0.34);
+}
+
+.btn-primary:hover{
+    background-color:var(--color-secondary)!important;
+    color:var(--color-secondary);
+  }
+  
+  .btn-primary:active{
+    background-color:var(--color-secondary);
+    color:var(--color-primar);
+}
+
+.btn-check:focus+.btn, .btn:focus{
+    outline: none;
+    background-color: var(--color-primary);
+    color:var(--color-secondary);
+  }
+  
+  .btn:active:focus{
+    box-shadow: 3px 2px 52px -15px rgba(255,186,51,0.34);
+    border: none;
+  }
+  .btn:focus{
+    box-shadow: 3px 2px 52px -15px rgba(255,186,51,0.34);
+    border: none;
+  }
+
+
+//random
+.card{
+    border:0;
+}
+
+.card-header{
+    background-color:var(--color-primary);
+}
+
+.shadow{
+    box-shadow: 0px 2px 48px -17px rgba(0,0,0,0.78);
+    -webkit-box-shadow: 0px 2px 48px -17px rgba(0,0,0,0.78);
+    -moz-box-shadow: 0px 2px 48px -17px rgba(0,0,0,0.78);
+}
+
+.form-control{
+    border:0;
+    background-color: rgb(241, 238, 238);
+    border-radius: 10px;
+}
+
+.form-control:focus{
+    background-color: #fff;
+    border-color: #ffffff!important;
+    box-shadow: none;
+    // border: 2px solid var(--color-primary);
+  }
+  
+  .form-select{
+    padding: 0.8rem 0.75rem;
+    border-radius:0.675rem;
+    // border: 2px solid var(--color-primary);
+  }
+  
+  .form-select:focus{
+    background-color: #fff;
+    border-color: #4F5665!important;
+    // border: 2px solid var(--color-primary);
+    box-shadow: none;
+  }
